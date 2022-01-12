@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap");
+
+body {
+  background: linear-gradient(to right, #f6d365, #fda085);
+  font-family: sans-serif;
+
+  color: white;
+}
+
+.top-part {
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Red Hat Mono", monospace;
+  font-weight: 600;
+}
+
+form {
+  background: white;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+form input,
+form button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  background: white;
+  border-width: 0px;
+  border: none;
+  outline: none;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.list-item {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  background: white;
+  color: #ff6f47;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+#btn-submit:hover,
+#btn-clear:hover {
+  color: white;
+  background: #ff6f47;
+}
+
+.list-buttons {
+  background-color: #ff6f47;
+}
+
+#btn-done,
+#btn-delete {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+#btn-done:hover {
+  background: rgb(73, 204, 73);
+}
+#btn-delete:hover {
+  background: white;
+  color: #ff6f47;
+}
+
+#text {
+  padding: 0rem 0.7rem;
+  font-size: 1.4rem;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 550px) {
+  form input,
+  form button {
+    font-size: 1.4rem;
+    padding: 0.4rem;
+  }
+
+  .list-container {
+    margin-right: 35px;
+  }
+}
